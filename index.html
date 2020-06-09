@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory / Pairs</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<h1>Pairs 20.1.6</h1>
+<p>TDI 2020 Sommersemester Übung 6 - JavaScript (ECMA 6)</p>
+
+<div class="game">
+    <button id="startNewGameButton">Neues Spiel starten</button>
+    <span id="timerContainer">
+        <span id="timerSpan"></span>
+        <br>
+        <span id="timeoutSpan"></span>
+    </span>
+    <br>
+
+    <table id="playground"></table>
+
+    <button id="showSettingsButton">Einstellungen verbergen...</button>
+    <div class="settings" id="settings">
+        <table width="100%">
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <h3>Dimensionen</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" width="30%">
+                    <label for="rows">Zeilen:</label>
+                </td>
+                <td>
+                    <input type="number" min="1" name="rows" id="rows" value="3">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="columns">Spalten:</label>
+                </td>
+                <td>
+                    <input type="number" min="1" name="columns" id="columns" value="3">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="same">Anzahl gleicher Karten für Übereinstimmung:</label>
+                </td>
+                <td>
+                    <input type="number" min="1" name="same" id="same" value="3">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="timeout">Timeout (sec)</label>
+                </td>
+                <td>
+                    <input type="number" min="0" name="timeout" id="timeout" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h3>Zeichenauswahl</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="startNumber">Starte bei Unicode:</label>
+                </td>
+                <td>
+                    <input type="number" min="0" name="startNumber" id="startNumber" value="128568" >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Zeichenvorschau:
+                </td>
+                <td id="symbolPreview">
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button type="button" id="applySettings">Anwenden</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="js/pairs.js" async></script>
+</body>
+</html>

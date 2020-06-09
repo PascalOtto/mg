@@ -1,0 +1,76 @@
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Verdana, serif;
+    margin: 0 5% 0 5%;
+}
+
+.game {
+    padding: 1em;
+    margin: 1em 0;
+    border: 2px solid #3d8be7;
+    background-color: #74bbe6;
+}
+
+input {
+    font-size: 1.3em;
+    padding: 5px;
+    padding-left: 0.3em;
+}
+
+.settings {
+    font-family: Tahoma, serif;
+    font-size: small;
+    padding: 1em;
+    margin-top: 1em;
+    border: 1px dashed #000080;
+    background-color: lightgrey;
+    display: block;
+}
+
+.settings input[type=number] {
+    display: inline;
+    border: 1px solid grey;
+    background-color: white;
+    width: 12em;
+}
+
+#playground {
+    margin: 1em auto;
+}
+
+#playground td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
+    background-color: yellow;
+    border: 1px solid black;
+    margin: 3px;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#symbolPreview {
+    border: 1px solid grey;
+    background-color: white;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px 5px 10px;
+}
+
+#timerContainer {
+    display: inline;
+    float: right;
+}
+
+#timerSpan {
+
+}
+
+#timeoutSpan {
+
+}
