@@ -1,3 +1,3 @@
 # Memory
 
-https://pascalotto.github.io/MemoryGameBrowser/
+https://pascalotto.github.io/mg/
